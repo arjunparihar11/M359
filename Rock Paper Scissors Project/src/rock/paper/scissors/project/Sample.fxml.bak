@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.00010681152344" prefWidth="319.9998779296875" xmlns:fx="http://javafx.com/fxml" fx:controller="rock.paper.scissors.project.GUIcontroller">
+  <children>
+    <ImageView fx:id="imgHuman" fitHeight="100.2500001054061" fitWidth="133.66666412353516" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imgCPU" fitHeight="100.25004448241998" fitWidth="133.66672597655997" layoutX="172.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+    <Button fx:id="btnRock" layoutX="59.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleRock" text="Rock" />
+    <Button fx:id="btnScissors" layoutX="208.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleScissors" text="Scissors" />
+    <Button fx:id="btnPaper" layoutX="135.0" layoutY="137.0" mnemonicParsing="false" onAction="#handlePaper" text="Paper" />
+    <Button fx:id="btnDifficulty" layoutX="116.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleDifficulty" text="Set Difficulty" />
+  </children>
+</AnchorPane>

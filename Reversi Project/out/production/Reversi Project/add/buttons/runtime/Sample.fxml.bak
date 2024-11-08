@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="401.0" prefWidth="495.0" xmlns:fx="http://javafx.com/fxml" fx:controller="add.buttons.runtime.GUIcontroller">
+  <children>
+    <Button fx:id="button" layoutX="401.0" layoutY="14.0" onAction="#handleButtonAction" text="Start Game" />
+    <GridPane fx:id="gPane" layoutX="7.0" layoutY="6.0" prefHeight="387.0" prefWidth="388.0" />
+    <Label fx:id="lblPturn" layoutX="408.0" layoutY="43.0" text="White's Turn" underline="true" visible="false">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="lblW" font="$x1" layoutX="408.0" layoutY="74.0" text="White:" visible="false" />
+    <Label fx:id="lblB" font="$x1" layoutX="408.0" layoutY="90.0" text="Black:" visible="false" />
+    <Label fx:id="lblP1Score" layoutX="447.0" layoutY="75.0" text="2" visible="false" />
+    <Label fx:id="lblP2Score" layoutX="444.0" layoutY="91.0" text="2" visible="false" />
+  </children>
+</AnchorPane>
