@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml" fx:controller="shapecalculatorproject.GUIcontroller">
+  <children>
+    <Button fx:id="button" layoutX="91.0" layoutY="67.0" onAction="#handleQuad" text="Create A Quadrilateral" />
+    <Button id="button" layoutX="100.0" layoutY="107.0" onAction="#handleTriangle" text="Create A Triangle" />
+  </children>
+</AnchorPane>
