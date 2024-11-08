@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml" fx:controller="cashregisterproject.SampleController">
+  <children>
+    <Button fx:id="button" layoutX="237.0" layoutY="172.0" onAction="#handleCheckOut" text="Check Out" />
+    <Label fx:id="lblTotalCost" alignment="TOP_CENTER" layoutX="168.0" layoutY="3.0" text="\$0.00">
+      <font>
+        <Font name="Times New Roman" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label id="lblTotalCost" fx:id="lblChange" alignment="TOP_CENTER" font="$x1" layoutX="168.0" layoutY="26.0" text="\$0.00" />
+    <Line endX="219.0" layoutX="101.0" layoutY="51.0" startX="-100.0" />
+    <Line endX="219.0" layoutX="101.0" layoutY="165.0" startX="-100.0" />
+    <Line endX="-62.0" endY="89.0" layoutX="175.0" layoutY="76.0" startX="-62.0" startY="-26.0" />
+    <Button layoutX="19.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleBuyGame" text="Buy Game" />
+    <Button layoutX="15.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleBuyConsole" text="Buy Console" />
+    <Button layoutX="16.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleBuyCookie" text="Buy Cookie" />
+    <Button layoutX="9.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleOtherPurchase" text="Add Purchase" />
+    <Button id="button" layoutX="9.0" layoutY="171.0" onAction="#handleReset" text="Reset" />
+    <TextField fx:id="txtAmountGiven" layoutX="64.0" layoutY="171.0" prefWidth="166.0" promptText="0.00" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" layoutX="116.0" layoutY="59.0" text="\$100s:">
+      <font>
+        <Font name="Times New Roman" size="16.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label id="lblTotalCost" fx:id="lbl100" alignment="TOP_CENTER" font="$x2" layoutX="156.0" layoutY="60.0" prefWidth="12.0001220703125" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="116.0" layoutY="73.0" text="\$50s:" />
+    <Label id="lblTotalCost" fx:id="lbl50" alignment="TOP_CENTER" font="$x2" layoutX="147.0" layoutY="74.0" prefWidth="12.0001220703125" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="116.0" layoutY="87.0" text="\$20s:" />
+    <Label id="lblTotalCost" fx:id="lbl20" alignment="TOP_CENTER" font="$x2" layoutX="147.0" layoutY="89.0" prefWidth="12.0001220703125" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="116.0" layoutY="103.0" text="\$10s:" />
+    <Label id="lblTotalCost" fx:id="lbl10" alignment="TOP_CENTER" font="$x2" layoutX="147.0" layoutY="104.0" prefWidth="12.0001220703125" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="116.0" layoutY="119.0" text="\$5s:" />
+    <Label id="lblTotalCost" fx:id="lbl5" alignment="TOP_CENTER" font="$x2" layoutX="139.0" layoutY="120.0" prefWidth="12.0001220703125" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="116.0" layoutY="135.0" text="\$1s:" />
+    <Label id="lblTotalCost" fx:id="lbl1" alignment="TOP_CENTER" font="$x2" layoutX="140.0" layoutY="136.0" prefWidth="12.0001220703125" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="207.0" layoutY="59.0" text="Quarters:" />
+    <Label id="lblTotalCost" fx:id="lblQ" alignment="TOP_CENTER" font="$x2" layoutX="266.0" layoutY="60.0" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="207.0" layoutY="73.0" text="Dimes:" />
+    <Label id="lblTotalCost" fx:id="lblD" alignment="TOP_CENTER" font="$x2" layoutX="252.0" layoutY="74.0" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="207.0" layoutY="89.0" text="Nickels:" />
+    <Label id="lblTotalCost" fx:id="lblN" alignment="TOP_CENTER" font="$x2" layoutX="260.0" layoutY="89.0" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="207.0" layoutY="103.0" text="Pennies:" />
+    <Label id="lblTotalCost" fx:id="lblP" alignment="TOP_CENTER" font="$x2" layoutX="260.0" layoutY="104.0" text="0" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="97.0" layoutY="5.0" text="Total Cost:" />
+    <Label id="lblTotalCost" alignment="TOP_CENTER" font="$x2" layoutX="85.0" layoutY="27.0" text="Change Due:" />
+  </children>
+</AnchorPane>
